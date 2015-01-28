@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: ChunkFive-Roman;
-    src: url(chunkfive.eot);
-    src: url(chunkfive.eot?#iefix) format('embedded-opentype'), url(chunkfive.woff) format('woff'), url(chunkfive.ttf) format('truetype'), url(chunkfive.svg#chunkfive) format('svg');
+    src: url(fonts/chunkfive.eot);
+    src: url(fonts/chunkfive.eot?#iefix) format('embedded-opentype'), url(fonts/chunkfive.woff) format('woff'), url(fonts/chunkfive.ttf) format('truetype'), url(fonts/chunkfive.svg#chunkfive) format('svg');
     font-weight: 400;
     font-style: normal
 }
