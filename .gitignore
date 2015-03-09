@@ -1,3 +1,5 @@
 .htaccess
 error_log
-divshot.json
+.divshot-cache
+error.html
+node_modules
