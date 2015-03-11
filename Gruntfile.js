@@ -55,11 +55,27 @@ module.exports = function(grunt) {
 	      }
 	    },
 
+	    critical: {
+		    test: {
+		        options: {
+		            base: './',
+		            css: [
+		                'css/style.css'
+		            ],
+		            width: 2000,
+		            height: 900
+		        },
+		        src: 'index.html',
+		        dest: 'css/critical.css'
+		    }
+		}
+
 
 
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.registerTask('default', ['imagemin']);
+	grunt.loadNpmTasks('grunt-critical');
 
 };

@@ -1,0 +1,741 @@
+@import url(/css/normalize.css);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic-ext,cyrillic);
+
+@font-face {
+    font-family: ChunkFive-Roman;
+    src: url(/css/fonts/chunkfive.eot);
+    src: url(/css/fonts/chunkfive.eot?#iefix) format('embedded-opentype'), url(/css/fonts/chunkfive.woff) format('woff'), url(/css/fonts/chunkfive.ttf) format('truetype'), url(/css/fonts/chunkfive.svg#chunkfive) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+.group:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+.group {
+    clear: both
+}
+.group {
+    display: block
+}
+a {
+    text-decoration: none
+}
+a img {
+    border: none
+}
+::selection {
+    background: rgba(19, 110, 114, .7);
+    color: #fff;
+    text-shadow: none
+}
+::-moz-selection {
+    background: rgba(19, 110, 114, .7);
+    color: #fff;
+    text-shadow: none
+}
+.left {
+    float: left
+}
+* {
+    margin: 0;
+    padding: 0
+}
+body, html {
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto
+}
+body {
+    font-family: 'Open Sans', Arial, sans;
+    font-weight: 300;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch!important
+}
+body.noScroll{
+    overflow: hidden!important;
+    position: fixed!important
+}
+.page_wrapper {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%
+}
+.loader {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    top: 0;
+    background-color: #FEFDFD
+}
+.loader .loader_wrapper {
+    position: absolute;
+    width: 371px;
+    height: 480px;
+    left: 50%;
+    margin-left: -185px;
+    top: 50%;
+    margin-top: -240px
+}
+.loader img {
+    opacity: .1;
+    margin-bottom: 20px;
+    width: 270px;
+    height: auto
+}
+.loader .percentage {
+    font-family: "Open Sans", Arial, sans;
+    font-size: 40px;
+    color: #238A8F
+}
+.pageHeader {
+    height: 50px;
+    width: 100%;
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+.headerExtendBackground_left {
+    background-color: rgba(35, 138, 143, .85);
+    height: 50px;
+    top: 0;
+    left: -5000px;
+    position: absolute;
+    width: 5000px
+}
+.headerExtendBackground_right {
+    background-color: rgba(35, 138, 143, .85);
+    height: 50px;
+    top: 0;
+    left: 1100px;
+    position: absolute;
+    width: 5000px
+}
+.pageNav {
+    height: 50px;
+    width: 1002px;
+    background-color: rgba(35, 138, 143, .85)
+}
+.pageNav ul {
+    padding: 0;
+    margin: 0;
+    float: right
+}
+.pageNav li {
+    padding: 0 21px;
+    margin: 0;
+    line-height: 50px;
+    float: left;
+    list-style: none
+}
+.pageNav li:last-child {
+    padding-right: 0
+}
+.pageNav li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    -webkit-transition: color .2s ease-out;
+    -moz-transition: color .2s ease-out;
+    -o-transition: color .2s ease-out;
+    transition: color .2s ease-out
+}
+.items {
+    overflow: hidden
+}
+.items li {
+    list-style: none
+} .scrollblock {
+    width: 100%;
+    overflow: hidden;
+    position: relative
+} .scrollblock .page_wrapper {
+    position: relative
+}
+.hamburger {
+    display: none
+}
+.homeBlock {
+    background: url(/img/background_home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 1000px
+} .homeBlock #firstSlideSlideDown {
+    cursor: url(/img/arrow.png) 23 23, crosshair
+}
+.bird, .blured_bird, .firstSlide_textImg_and, .firstSlide_textImg_digital, .firstSlide_textImg_love, .firstSlide_textImg_think, .firstSlide_textImg_we {
+    position: absolute;
+    z-index: 3
+}
+.firstSlide_textImg_we {
+    width: 333px;
+    height: 183px;
+    left: -25px;
+    top: 230px;
+    background: url(/img/slogan/we.png) no-repeat
+}
+.firstSlide_textImg_think {
+    width: 523px;
+    height: 183px;
+    left: 330px;
+    top: 220px;
+    background: url(/img/slogan/think.png) no-repeat
+}
+.firstSlide_textImg_digital {
+    width: 609px;
+    height: 212px;
+    left: 0;
+    top: 420px;
+    background: url(/img/slogan/digital.png) no-repeat
+}
+.firstSlide_textImg_and {
+    width: 209px;
+    height: 212px;
+    left: 580px;
+    top: 410px;
+    background: url(/img/slogan/and.png) no-repeat
+}
+.firstSlide_textImg_love {
+    width: 363px;
+    height: 171px;
+    right: -30px;
+    top: 435px;
+    background: url(/img/slogan/love.png) no-repeat
+}
+.blured_bird {
+    width: 175px;
+    height: 165px;
+    left: 266px;
+    top: 51px;
+    background: url(/img/blurred_bird.png) no-repeat
+}
+.bird {
+    width: 600px;
+    height: 564px;
+    right: 129px;
+    top: 310px;
+    background: url(/img/bird.png) no-repeat;
+    z-index: 2
+}
+.scroll_getter_first {
+    visibility: hidden;
+    position: absolute;
+    bottom: 500px
+}
+#closePortfolio {
+    z-index: 9999;
+    background: url(/img/close.png) no-repeat;
+    height: 39px;
+    position: absolute;
+    right: -87px;
+    text-align: right;
+    top: 15px;
+    width: 140px;
+    cursor: pointer
+}
+.web_portfolio_popUp {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    background-color: #ececec;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out
+}
+.web_portfolio_popUp .popup_slider {
+    position: absolute;
+    top: 50%;
+    margin-top: -291px;
+    left: 0;
+    width: 100%
+}
+.web_portfolio_popUp .page_wrapper {
+    height: 98%
+}
+.dots {
+    background: url(/img/dots.png);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2
+}
+.web_portfolio h2 {
+    font-family: ChunkFive-Roman;
+    color: #19858a;
+    font-size: 62px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 70px
+}
+.mobile_logo {
+    display: none
+}
+#portfolio_items li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-right: 17px
+}
+#portfolio_items li:nth-child(3n+3) {
+    margin-right: 0
+}
+.screen_holder {
+    background: url(/img/web_screen.png) no-repeat;
+    height: 583px;
+    width: 780px;
+    position: relative;
+    cursor: url(/img/arrow90.png) 23 23, crosshair
+}
+.screen_holder img {
+    left: 32px;
+    position: absolute;
+    top: 32px
+}
+.iphone_holder {
+    background: url(/img/iphone_hand_portfolio.png) no-repeat;
+    height: 583px;
+    width: 693px;
+    position: relative;
+    margin-left: 100px
+}
+.iphone_holder img {
+    left: 173px;
+    position: absolute;
+    top: 67px
+}
+.iphone_holder_inspirato {
+    height: 692px;
+    width: 464px;
+    margin-right: 200px
+}
+.ipad_holder {
+    background: url(/img/ipad.png) no-repeat;
+    height: 583px;
+    width: 693px;
+    position: relative;
+    margin-left: 50px
+}
+.ipad_holder img {
+    left: 53px;
+    position: absolute;
+    top: 57px
+}
+.text-holder {
+    font-weight: 300;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    width: 320px;
+    z-index: 5;
+    background-color: #ececec
+}
+.text-holder p {
+    font-size: 15px;
+    line-height: 25px
+}
+.text-holder h2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 15px
+}
+.text-holder a {
+    color: #460b34;
+    text-decoration: underline;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+.text-holder h2 a {
+    text-decoration: none
+}
+.text-holder hr {
+    border: none;
+    background: url(/img/hr_background.png) repeat-x
+}
+#res {
+    display: none;
+    font-size: 24px;
+    line-height: 28px;
+    width: 337px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-family: ChunkFive-Roman;
+    text-transform: capitalize
+}
+.web_portfolio_slider li {
+    list-style: none;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0)!important;
+    transform: matrix(1, 0, 0, 1, 0, 0)!important
+}    
+
+@media screen and (max-width: 1024px) {
+    .page_wrapper {
+        width: 100%
+    }
+    .logo {
+        width: 10%;
+        height: auto
+    }
+    .pageNav {
+        width: 89%;
+        padding-right: 1%
+    }
+    #firstSlideSlideDown span {
+        background-size: 100% auto
+    }
+    .firstSlide_textImg_we {
+        width: 210px;
+        height: 150px;
+        left: 100px
+    }
+    .firstSlide_textImg_think {
+        width: 363px
+    }
+    .firstSlide_textImg_digital {
+        width: 409px;
+        height: 132px;
+        top: 360px;
+        left: 100px
+    }
+    .firstSlide_textImg_and {
+        width: 89px;
+        height: 92px;
+        left: 530px;
+        top: 380px
+    }
+    .firstSlide_textImg_love {
+        height: 111px;
+        width: 233px;
+        top: 378px;
+        right: 140px
+    }
+    .bird {
+        width: 380px;
+        height: 364px;
+        right: 0;
+        top: 0
+    }
+    .blured_bird {
+        width: 175px;
+        height: 175px
+    }
+    .homeBlock {
+        min-height: 700px
+    }
+    .web_portfolio h2 {
+        padding: 80px 20px 0
+    }
+    .items li {
+        background-attachment: scroll
+    }
+    #portfolio_items li {
+        width: 30%;
+        margin-right: 4%
+    }
+    .iphone_holder_inspirato {
+        margin-right: 300px;
+        width: 40%;
+        height: auto
+    }
+    #closePortfolio {
+        right: 20px
+    }
+    .text-holder {
+        padding: 0 20px
+    }
+    #background_wrap {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 740px;
+        width: 100%;
+        background-size: auto 100%;
+        background-image: url(/img/devlabs_team.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0
+    }
+    .web_portfolio_popUp .popup_slider {
+        margin-top: -270px
+    }
+}
+@media screen and (max-width: 980px) {
+    #background_wrap {
+        height: 1200px;
+        background-position: -440px 0
+    }
+}
+@media screen and (max-width: 768px) {
+    .text-holder {
+        padding-bottom: 20px;
+        width: 250px
+    }
+    .ipad_holder, .iphone_holder {
+        margin: 0 auto
+    }
+    .iphone_holder {
+        width: 480px
+    }
+    .iphone_holder_inspirato {
+        margin: 0 auto;
+        width: 50%
+    }
+    .web_portfolio_popUp .popup_slider {
+        margin-top: -250px;
+        margin-left: 2%
+    }
+    .ipad_holder {
+        background-position: 60px 0
+    }
+    .ipad_holder img {
+        left: 113px
+    }
+    .firstSlide_textImg_we {
+        top: 214px;
+        width: 230px
+    }
+    .firstSlide_textImg_think {
+        top: 230px
+    }
+    .firstSlide_textImg_digital {
+        left: 20px;
+        width: 320px;
+        top: 350px
+    }
+    .firstSlide_textImg_and {
+        left: 340px;
+        top: 360px
+    }
+    .firstSlide_textImg_love {
+        right: 100px;
+        top: 364px
+    }
+    .text-holder {
+        position: static;
+        margin: 0 auto;
+        display: inline-block
+    }
+    #background_wrap {
+        height: 1000px
+    }
+}
+@media screen and (max-width: 710px) {
+    .loader .loader_wrapper {
+        height: 220px;
+        margin-top: -180px
+    }
+    .loader {
+        height: 150%;
+        overflow: hidden!important
+    }
+    .web_portfolio_popUp .popup_slider {
+        margin-left: 0
+    }
+    .loader_wrapper img {
+        width: 140px;
+        height: auto
+    }
+    #portfolio_items li {
+        width: 32%;
+        margin: 0;
+        display: inline-block;
+        float: none
+    }
+    .web_portfolio h2 {
+        text-align: center;
+        padding-top: 75px
+    }
+    #background_wrap {
+        height: 810px
+    }
+    .firstSlide_textImg_we {
+        width: 40%;
+        left: 12%;
+        top: 130px
+    }
+    .firstSlide_textImg_think {
+        top: 200px;
+        width: 50%;
+        left: auto;
+        right: 8%
+    }
+    .firstSlide_textImg_digital {
+        left: 5%;
+        width: 50%;
+        top: 310px
+    }
+    .firstSlide_textImg_and {
+        left: 40%;
+        width: 21%;
+        top: 350px;
+        height: 150px
+    }
+    .firstSlide_textImg_love {
+        right: 3%;
+        top: 420px;
+        width: 43%
+    }
+    .bird {
+        width: 70%;
+        top: 50px;
+        height: 410px
+    }
+    .blured_bird {
+        width: 30%;
+        left: 10%;
+        z-index: 1
+    }
+    .hamburger {
+        display: block;
+        background: url(/img/mobile_menu.png) no-repeat;
+        width: 48px;
+        height: 34px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer
+    }
+    .iphone_holder {
+        margin: 40px 0 0;
+        width: 320px;
+        background-size: 100% auto;
+        height: 340px
+    }
+    .iphone_holder img {
+        left: 132px;
+        top: 50px;
+        width: 131px;
+        height: auto
+    }
+    .screen_holder {
+        height: 300px;
+        width: 290px;
+        background-size: 100% auto;
+        margin-top: 40px
+    }
+    .screen_holder img {
+        width: 91%;
+        height: auto;
+        top: 13px;
+        left: 14px
+    }
+    .popup_slider ul {
+        margin: 0 auto
+    }
+    .ipad_holder {
+        margin-left: 0;
+        background-size: 100% auto;
+        background-position: 0 0;
+        width: 290px;
+        margin-top: 40px;
+        height: 300px
+    }
+    .ipad_holder img {
+        width: 84%;
+        height: auto;
+        top: 24px;
+        left: 23px
+    }
+    .logo {
+        width: 53px;
+        float: none;
+        display: none;
+        padding-top: 10px;
+        padding-left: 10px
+    }
+    .pageHeader {
+        text-align: left;
+        min-height: 68px;
+        background-color: rgba(255, 255, 255, .6)
+    }
+    .pageNav {
+        display: none;
+        background-color: rgba(255, 255, 255, .6)
+    }
+    .mobile_logo {
+        display: inline-block
+    }
+    .pageNav {
+        height: auto;
+        width: 100%
+    }
+    .pageNav ul {
+        float: none
+    }
+    .pageNav ul li {
+        float: none;
+        text-align: left;
+        padding: 0;
+        transition-duration: .6s;
+        -webkit-transition-duration: .6s;
+        border-bottom: 1px solid #19858a;
+        line-height: 35px
+    }
+    .pageNav ul li a {
+        float: none;
+        text-align: left;
+        padding-left: 20px;
+        display: block;
+        color: #000;
+        font-weight: 600;
+        font-size: 18px
+    }
+    .iphone_holder_inspirato {
+        margin-top: 40px
+    }
+    .web_portfolio_popUp .popup_slider {
+        top: 0;
+        margin-top: 20px
+    }
+}
+@media screen and (max-width: 570px) {
+    #portfolio_items li {
+        width: 45%
+    }
+}
+@media screen and (max-width: 420px) {
+    .loader .loader_wrapper {
+        margin-top: -240px
+    }
+    #portfolio_items li {
+        width: 75%
+    }
+    .web_portfolio h2 {
+        font-size: 46px;
+        padding-top: 75px
+    }
+}

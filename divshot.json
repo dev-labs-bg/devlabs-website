@@ -2,5 +2,6 @@
   "name": "devlabs-website",
   "root": "./",
   "clean_urls": true,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "exclude": ["node_modules"]
 }

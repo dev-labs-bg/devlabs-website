@@ -64,11 +64,12 @@ function clearInputs() {
     $("form[name='contact'] .inputS,form[name='contact'] textarea").val("")
 }
 $(document).ready(function() {
-    function u() {
+
+    function showLoader() {
         if (parseInt($("#ld_pc").html(), null) == 100) {
             clearInterval(o);
             enableBodyScroll();
-            $("#loader").fadeOut(1e3);
+            $("#loader").fadeOut();
             return false
         }
         $("#ld_pc").html(parseInt($("#ld_pc").html(), 10) + 1)
@@ -205,7 +206,7 @@ $(document).ready(function() {
     $("#loader img").animate({
         opacity: 1
     });
-    var o = setInterval(u, 10);
+    var o = setInterval(showLoader, 10);
     $(window).load(function() {
         $("body").css("overflow-y", "auto")
     });
@@ -435,12 +436,12 @@ $(document).ready(function() {
         res3 = valid($("input[name='subject']"));
         res4 = valid($("textarea[name='msg']"));
         if (t && res2 && res3 && res4) {
-            var n = $.post("sender.php", {
+            var n = $.post("php/sender.php", {
                 name: $("input[name='name']").val(),
                 email: $("input[name='email']").val(),
                 subject: $("input[name='subject']").val(),
                 msg: $("textarea[name='msg']").val()
-            });
+            },'json');
             n.success(function() {
                 $("#res").html("Thank you ;)");
                 $("#res").show(1500);
