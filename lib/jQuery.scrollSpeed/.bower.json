@@ -1,0 +1,14 @@
+{
+  "name": "jQuery.scrollSpeed",
+  "homepage": "https://github.com/ByNathan/jQuery.scrollSpeed",
+  "_release": "4c3624154f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4c3624154fd442b4937885216f39be72cb6d4b2d"
+  },
+  "_source": "git://github.com/ByNathan/jQuery.scrollSpeed.git",
+  "_target": "*",
+  "_originalSource": "ByNathan/jQuery.scrollSpeed",
+  "_direct": true
+}

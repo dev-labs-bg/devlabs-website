@@ -65,6 +65,8 @@ function clearInputs() {
 }
 $(document).ready(function() {
 
+    jQuery.scrollSpeed(135, 600, 'easeOutCubic' );
+
     function showLoader() {
         if (parseInt($("#ld_pc").html(), null) == 100) {
             clearInterval(o);

@@ -99,7 +99,7 @@ body.noScroll, html.noScroll {
     left: 0;
     text-align: center;
     top: 0;
-    background-color: #FEFDFD
+    background-color: #fff;
 }
 .loader .loader_wrapper {
     position: absolute;
@@ -1005,8 +1005,12 @@ body.noScroll, html.noScroll {
     transform: matrix(1, 0, 0, 1, 0, 0)!important
 }
 @media screen and (max-width: 1024px) {
+
     .page_wrapper {
         width: 100%
+    }
+    .loader {
+        background-color: transparent;
     }
     .logo {
         width: 10%;
