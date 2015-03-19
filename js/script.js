@@ -435,7 +435,7 @@ $(document).ready(function() {
         res3 = valid($("input[name='subject']"));
         res4 = valid($("textarea[name='msg']"));
         if (t && res2 && res3 && res4) {
-            var n = $.post("sender.php", {
+            var n = $.post("php/sender.php", {
                 name: $("input[name='name']").val(),
                 email: $("input[name='email']").val(),
                 subject: $("input[name='subject']").val(),
