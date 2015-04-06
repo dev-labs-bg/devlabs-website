@@ -2,7 +2,7 @@
 
     if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
     {
-        $to      = 'goran@devlabs.bg, superkalo@devlabs.bg';
+        $to      = 'hello@devlabs.bg';
         $subject = "Devlabs.bg contact form -> ".$_POST['subject'];
         $message = $_POST['msg'];
 
