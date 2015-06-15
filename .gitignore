@@ -1,3 +1,4 @@
 .htaccess
 error_log
 divshot.json
+deploy.php
