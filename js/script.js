@@ -466,7 +466,7 @@ $(document).ready(function() {
 
     //Add Console Message
     console.message()
-        .image('http://devlabs.bg/img/original-logo.png', { zoom: 0.9 })
+        .image('http://devlabs.bg/img/original-logo.png', { zoom: 0.2 })
         .group()
             .span({ color: '#19858a' })
             .text('Available Jobs')
