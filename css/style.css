@@ -488,18 +488,19 @@ body.noScroll, html.noScroll {
     left: 100px;
     z-index: 5;
     bottom: 0;
-    width: 593px;
-    height: 678px;
-    background: url(../img/iPhone_hand.png) no-repeat
+    width: 528px;
+    height: 719px;
+    background: url(../img/iPhone_hand.png) no-repeat;
+    background-size: 100%;
 }
 .mobile_apps_holder {
-    width: 228px;
-    height: 405px;
+    width: 272px;
+    height: 480px;
     position: absolute;
-    top: 82px;
-    left: 64px
+    top: 76px;
+    left: 92px;
 }
-.status_bar {
+/*.status_bar {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -508,7 +509,7 @@ body.noScroll, html.noScroll {
     width: 229px;
     height: 344px;
     background: url(../img/phone_status.png) no-repeat
-}
+}*/
 .web_portfolio {
     background: url(../img/dots-gray.png) repeat #e6e6e6
 }
@@ -623,27 +624,34 @@ body.noScroll, html.noScroll {
 }
 .screen_holder {
     background: url(../img/web_screen.png) no-repeat;
-    height: 583px;
-    width: 780px;
+    height: 567px;
+    width: 686px;
     position: relative;
-    cursor: url(../img/arrow90.png) 23 23, crosshair
+    cursor: url(../img/arrow90.png) 23 23, crosshair;
+    background-size: 100%;
 }
 .screen_holder img {
-    left: 32px;
+    left: 27px;
     position: absolute;
-    top: 32px
+    top: 27px;
+    width: 92.5%;
+    height: auto;
 }
 .iphone_holder {
-    background: url(../img/iphone_hand_portfolio.png) no-repeat;
-    height: 583px;
-    width: 693px;
+    background: url(../img/iPhone_hand.png) no-repeat;
+    height: 594px;
+    width: 467px;
     position: relative;
-    margin-left: 100px
+    margin-left: 100px;
+    background-size: 100%;
+    display: block;
 }
 .iphone_holder img {
-    left: 173px;
+    left: 81px;
     position: absolute;
-    top: 67px
+    top: 66px;
+    width: 52%;
+    height: auto;
 }
 .iphone_holder_inspirato {
     height: 692px;

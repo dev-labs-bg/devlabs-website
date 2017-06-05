@@ -2,3 +2,4 @@
 error_log
 divshot.json
 deploy.php
+.DS_Store
