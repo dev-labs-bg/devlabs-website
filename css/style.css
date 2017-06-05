@@ -1118,14 +1118,14 @@ body.noScroll, html.noScroll {
         padding: 0 20px
     }
     .hand {
-        width: 483px;
-        height: 552px;
-        background-size: 100% auto
+        width: 367px;
+        height: 502px;
+        background-size: 100% auto;
     }
     .mobile_apps_holder {
-        top: 66px;
-        left: 50px;
-        width: 198px;
+        top: 53px;
+        left: 63px;
+        width: 190px;
         height: 365px
     }
     .status_bar {
