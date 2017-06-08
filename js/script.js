@@ -549,4 +549,15 @@ $(document).ready(function() {
         .groupEnd()
     .print();
 
-})
+
+    /**
+     * Lazy Load delays loading of images in long web pages.
+     * Images outside of viewport wont be loaded before user scrolls to them.
+     * This is opposite of image preloading.
+     * Using Lazy Load on long web pages containing many large images
+     * makes the page load faster,
+     *
+     * @see: https://github.com/tuupola/jquery_lazyload
+     */
+    $('[data-lazy]').lazyload({ threshold: 200 });
+});
