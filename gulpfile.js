@@ -2,6 +2,9 @@ var elixir = require('laravel-elixir');
 
 require('laravel-elixir-imagemin');
 
+elixir.config.assetsPath = '.';
+elixir.config.publicPath = '.';
+
 elixir.config.images = {
     folder: 'img-uncompressed',
     outputFolder: 'img'
