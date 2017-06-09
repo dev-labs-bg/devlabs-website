@@ -465,88 +465,52 @@ $(document).ready(function() {
         }
     });
 
-    //Add Console Message
+    // Add an enhanced console message with rainbows and unicorns
     console.message()
         .image('http://devlabs.bg/img/original-logo.png', { zoom: 0.2 })
         .group()
             .span({ color: '#19858a' })
-            .text('Available Jobs')
+            .text('We are recruiting! We are searching for interns, mid-level developers or superstars passionate about:')
             .span({ color: '#000' })
             .line()
-            .text('PHP Developer')
-            .group()
-                .span({ color: '#19858a' })
-                .text('You are good at?')
-                .span({ color: '#000' })
-                .line()
-                .text('Main requirements:')
-                    .object({
-                        1: 'Good understanding of web technologies (HTTP, Apache, Nginx)',
-                        2: 'Knowledge and experience of Linux Server settings',
-                        3: 'At least 3 years experience in developing PHP applications',
-                        4: 'Strong knowledge and experience with 2 or more PHP frameworks',
-                        5: 'Knowledge in SQL and Databases, proven coding and indexing experience in MySQL/MariaDB/PostgreSQL',
-                        6: 'Knowledge in ORM concepts',
-                        7: 'Understanding common Design Patterns',
-                        8: 'Experience with version control software (Git, Gitflow)',
-                        9: 'Knowledge of REST and SOAP APIs',
-                        10: 'Knowledge of command line (Bash)',
-                        11: 'Knowledge in Javascript',
-                        12: 'Must be aware of Object Oriented JavaScript Frameworks - jQuery, MooTools, etc.',
-                    })
-                .line()
-                .text('Non-technical requirements:')
-                    .object({
-                        1: 'Good communicator',
-                        2: 'Working level of English language',
-                        3: 'Self-aware and eager to learn new things',
-                        4: 'Respectful to deadlines',
-                        5: 'Positive, responsible and team oriented person',
-                        6: 'Sense of humor and creativity',
-                        7: 'Excellent analytical skills and obsessive attention to detail',
-                        8: 'Strong troubleshooting skills',
-                        9: 'Experience in leading a team of developers',
-                        10: 'Good Communication/Organization skills - demonstrated ability to work with both technical and non technical individuals, both in gathering information and communicating direction and status',
-                        11: 'Bachelors/Masters Degree in Computer Science or similar',
-                        12: 'Ready to go the extra mile to do the job in the best possible way, not just to fill-in 8 hours daily. Must have a "can do" mentality and a passion for thinking outside the box while embracing new technologies and approaches to development.',
-                    })
-                .line()
-                .text('Extra awesome:')
-                    .object({
-                        1: 'Strong command of web standards, CSS-based design, cross-browser compatibility',
-                        2: 'Solid experience with Laravel or Symfony 2',
-                        3: 'Experience with test driven development',
-                        4: 'Experience with Continuous Integration (Jenkins, Travis CI or similar)',
-                        5: 'Experience with CSS Preprocessors',
-                        6: 'Experience with Angular',
-                        7: 'Experience with NoSQL databases',
-                        8: 'Experience with NodeJS',
-                        9: 'Familiarity working with more than one programming language, including: Python, Ruby, Java, etc.',
-                    })
-            .groupEnd()
+
+            .text('Back-end Web Development')
+            .span({ color: '#000' })
+            .line()
+
+            .text('Front-end Web Development')
+            .span({ color: '#000' })
+            .line()
+
+            .text('Native Mobile Development for iOS')
+            .span({ color: '#000' })
+            .line()
+
+            .text('Native Mobile Development for Android')
+            .span({ color: '#000' })
+            .line()
         .groupEnd()
+
         .group()
             .span({ color: '#19858a' })
             .text('Who are we?')
             .span({ color: '#000' })
             .line()
-            .text('We are small, boutique web studio located in Varna, Bulgaria. Our team includes professionals  passionate and addicted to its favorite action - working on new and exciting projects. We have a solid experience in providing a high class web platforms and applications. With over 150 projects and 8 years in the digital business we are confident that we have broad knowledge and experience how to make the most of a great online product. We think digital and love to create brave web solutions.')
+            .text('We are a small, boutique web studio located in Varna, Bulgaria. Our team includes professionals passionate about and addicted to working on new and exciting projects. We have solid experience in providing high-class web platforms and applications. With over 150 projects and 8 years in the digital business, we are confident that we have broad knowledge and experience with making the most of a great online product. We think digitally and love to create powerful web solutions.')
         .groupEnd()
+
         .group()
             .span({ color: '#19858a' })
-            .text('What we offer?')
+            .text('What do we offer?')
             .span({ color: '#000' })
             .line()
-            .text('A unique opportunity to work within a young and dynamic team which is continuously improving. Informal communication environment and possibility to work with inspiring startups and clients right from the heart of the Silicon Valley. During the years we were part of the development of several YC backed startups.')
+            .text('A unique opportunity to work with a young and dynamic team which is constantly improving. Casual and welcoming environment along with the possibility to work with inspiring startups and clients straight from the heart of Silicon Valley. Over the years we have been a part of the development of several YC backed startups.')
             .line()
-            .text('From participating into FIFA tournaments to taking action into regular Beer meetings and movie nights we offer a great office atmosphere for those of you who want to join our HQ. Moreover if you have a passion for gadgets - we have some Oculus, Raspberry\'s, DJI drone and others waiting for you to play with them. A Lafka for the sugar addicts and table-football can refresh your mind when you got stuck in to the Code.')
+            .text('From participating in FIFA tournaments and movie nights to taking action in regular Beer meetings, we offer a congenial office atmosphere for those of you who want to join our HQ. If you\'re passionate about gadgets - we have an Oculus, Raspberries, a DJI drone and other exciting devices waiting for you to play with. Refresh your mind with some foosball or grab a bite from our Lafka when you got stuck in the Code.')
             .line()
-            .text('So hurry up, no time to waste and join the Dev Campus for one amazing new journey!', {
-                fontSize: 20,
-                fontWeight: 600,
-                color: 'hsl(183, 69%, 32%)',
-                textShadow: '0 2px 0 hsl(183, 69%, 32%), 0 3px 2px hsla(330, 100%, 15%, 0.5), /* next */'
-            })
+            .text('So hurry up and join the Dev Campus for an amazing new journey!')
+            .line()
+            .text('PS: If you to contact us, we\'re eager to discuss the opportunity to become a part of our team. Write us at hello@devlabs.bg and mention the secret reference: TCG')
         .groupEnd()
     .print();
 
