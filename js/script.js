@@ -151,6 +151,7 @@ $(document).ready(function() {
         var n = $("[data-href='" + t.replace("#", "") + "']");
         $(window).on("load", function() {
             if (n.length > 0) {
+                scrollToTheNextSlide("#web_portfolio", 1500);
                 setTimeout(function() {
                     n.trigger("click")
                 }, 1500)
