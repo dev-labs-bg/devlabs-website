@@ -129,7 +129,7 @@ $(document).ready(function() {
         //google.maps.event.addListener(u, "click", f);
 
         google.maps.event.addListener(u, "click", function(){
-        	window.open("http://bit.ly/DevLabsOfficeLocation");
+            window.open("http://bit.ly/DevLabsOfficeLocation");
         });
 
         n.geocode({
