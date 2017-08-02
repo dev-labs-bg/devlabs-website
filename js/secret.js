@@ -17,7 +17,7 @@
     const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
     let konamiCodePosition = 0;
 
-    const keyupEvent = window.addEventListener('keyup', (e) => {
+    function keyupKonamiCodeEvent(e) {
         // get the value of the key code from the key map - allowedKeys
         const key = allowedKeys[e.keyCode];
         const requiredKey = konamiCode[konamiCodePosition];
@@ -32,7 +32,9 @@
         else {
             konamiCodePosition = 0;
         }
-    });
+    }
+
+    window.addEventListener('keyup', keyupKonamiCodeEvent);
 
     function changeTeamPictureToMustachifiedVersions() {
         const teamImages = document.querySelectorAll('.js-team');
@@ -47,8 +49,9 @@
         });
 
         // Turn off the 'keyup' event on the window
-        window.removeEventListener('keyup', keyupEvent);
+        window.removeEventListener('keyup', keyupKonamiCodeEvent);
 
-        // TODO: Scroll to the team section
+        // Scroll to the team section
+        $("li[data-link=#our_team]").trigger('click') // magic
     }
 })();
