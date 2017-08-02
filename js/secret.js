@@ -3,9 +3,21 @@
  * it is going to scroll to the team section and all team member images will be
  * changed with beards on them.
  *
- * If you want to add a new person to devlabs website and add him to
- * teamPicturesWithMoustaches, please go to config file and follow the instructions
- * added as comments!
+ * If you want to add a new person to devlabs website follow these instructions:
+ *
+ *   1. Pictures are made with the Wurstify chrome extension.
+ *   https://chrome.google.com/webstore/search/wurstify?hl=en
+ *   When it is turned on all the pictures in the website are changed.
+ *   Wurstify replaces all images in your browser with a wurstified version of them,
+ *   adding beard to all faces.
+ *
+ *   2. You can find the base64 code inside the Network tab,
+ *   download it (as webp image) and convert it to PNG (https://cloudconvert.com).
+ *   We're not using the webp images directly,
+ *   because they are supported in Chrome and Opera only :(
+ *
+ *   3. Upload the PNG to the `team/mustache/name-of-the-team-member`.
+ *   Note that the name of the mustachified pic should be the same as the original pic.
  */
 (function(){
 
@@ -41,11 +53,11 @@
 
         teamImages.forEach(teamImage => {
             const splitByDash = teamImage.src.split('/');
-            const name = splitByDash[splitByDash.length - 1].split('.')[0];
 
-            if (teamPicturesWithMoustaches[name]) {
-                teamImage.src = teamPicturesWithMoustaches[name];
-            }
+            // Adds `mustache` subdirectory, the modified awesome pics are there
+            splitByDash.splice(splitByDash.length - 1, 0, 'mustache');
+
+            teamImage.src = splitByDash.join('/');
         });
 
         // Turn off the 'keyup' event on the window
