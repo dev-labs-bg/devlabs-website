@@ -1,7 +1,15 @@
 /**
- * kjasdhkjsadh kadsh kajsdh askjdh adskjh adskjha kjdhsa jadksh jaksdh jakds
+ * This is config file! Here you can find all base64 team pictures with mouctaches code and
+ * add new ones in object teamPicturesWithMoustaches.
  *
- * akjsdjsadhjdasgjhads config file!
+ * Pictures are made with Wurstify chrome extension.
+ * https://chrome.google.com/webstore/search/wurstify?hl=en
+ *
+ * When it is turned on all the pictures in the website are changed.
+ * Wurstify replaces all images in your browser with a wurstified version of them, adding
+ * beard to all faces.
+ * You can find the base64 code inside the Network tab and add it to your object, as a new property.
+ *
  */
 
 const teamPicturesWithMoustaches = {

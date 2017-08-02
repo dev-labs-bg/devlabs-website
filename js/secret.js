@@ -1,12 +1,16 @@
 /**
- * kjasdhkjsadh kadsh kajsdh askjdh adskjh adskjha kjdhsa jadksh jaksdh jakds
+ * This is a secret konami code function. When you press the Konami combination
+ * it is going to scroll to the team section and all team member images will be
+ * changed with beards on them.
  *
- * akjsdjsadhjdasgjhads config file!
+ * If you want to add a new person to devlabs website and add him to
+ * teamPicturesWithMoustaches, please go to config file and follow the instructions
+ * added as comments!
  */
 (function(){
 
     /**
-     * Bla bla bl abaala a abala bla bla
+     * Function Konami Code from:
      * https://stackoverflow.com/a/31627191/1333836
      */
     const allowedKeys = { 37: 'left', 38: 'up', 39: 'right', 40: 'down', 65: 'a', 66: 'b'};
