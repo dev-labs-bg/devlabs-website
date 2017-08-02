@@ -17,7 +17,7 @@
     const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
     let konamiCodePosition = 0;
 
-    window.addEventListener('keyup', (e) => {
+    const keyupEvent = window.addEventListener('keyup', (e) => {
         // get the value of the key code from the key map - allowedKeys
         const key = allowedKeys[e.keyCode];
         const requiredKey = konamiCode[konamiCodePosition];
@@ -46,7 +46,9 @@
             }
         });
 
-        // TODO: Turn off the 'keyup' event on the window
+        // Turn off the 'keyup' event on the window
+        window.removeEventListener('keyup', keyupEvent);
+
         // TODO: Scroll to the team section
     }
 })();
