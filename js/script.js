@@ -467,7 +467,7 @@ $(document).ready(function() {
 
     // Add an enhanced console message with rainbows and unicorns
     console.message()
-        .image('http://devlabs.bg/img/original-logo.png', { zoom: 0.2 })
+        .image('https://devlabs.bg/img/original-logo.png', { zoom: 0.2 })
         .group()
             .span({ color: '#19858a' })
             .text('We are recruiting! We are searching for interns, mid-level developers or superstars passionate about:')
