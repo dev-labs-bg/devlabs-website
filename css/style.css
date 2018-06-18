@@ -1050,8 +1050,8 @@ body.noScroll, html.noScroll {
     font-weight: 300;
     background: none;
     height: 100%;
-    text-align: justify;
-    width: 100%;
+    text-align: left;
+    width: auto;
     position: relative;
 }
 .privacy-policy-page ul {
