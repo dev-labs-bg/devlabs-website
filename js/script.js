@@ -526,3 +526,4 @@ $(document).ready(function() {
      */
     $('[data-lazy]').lazyload({ threshold: 200 });
 });
+

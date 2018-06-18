@@ -851,6 +851,19 @@ body.noScroll, html.noScroll {
     padding: 5px 20px;
     text-align: right
 }
+.privacy-policy {
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.privacy-policy a {
+    color: #238a8f;
+}
+.privacy-policy a:hover {
+    opacity: 0.8;
+}
 .contact_info a {
     color: #f0f0f0
 }
@@ -1011,6 +1024,46 @@ body.noScroll, html.noScroll {
     list-style: none;
     -webkit-transform: matrix(1, 0, 0, 1, 0, 0)!important;
     transform: matrix(1, 0, 0, 1, 0, 0)!important
+}
+
+/*Privacy Policy Page Styles*/
+.privacy-policy-page {
+    background: url(../img/dots-gray.png) repeat #e6e6e6;
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0;
+}
+.privacy-policy-page h1 {
+    font-family: ChunkFive-Roman;
+    color: #19858a;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.privacy-policy-page p {
+    padding-bottom: 10px;
+}
+.privacy-policy-page b {
+    color: #19858a;
+}
+.privacy-policy-page .text-holder {
+    font-weight: 300;
+    background: none;
+    height: 100%;
+    text-align: justify;
+    width: 100%;
+    position: relative;
+}
+.privacy-policy-page ul {
+    display: block;
+    position: relative;
+    margin-left: 50px;
+}
+.privacy-policy-page li {
+    padding: 5px 0;
+}
+.privacy-policy-page li a {
+    color: #19858a;
 }
 @media screen and (max-width: 1024px) {
     .page_wrapper {
