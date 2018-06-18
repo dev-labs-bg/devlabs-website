@@ -738,7 +738,6 @@
                                 </svg>
                             </a>
                         </div>
-
                     </div>
 
                     <h2 class="whiteTitle">Get in touch</h2>
@@ -752,12 +751,19 @@
                     </form>
                 </div>
             </div>
-
             <div id="map_canvas"></div>
         </li>
 
     </ul>
-
+<footer>
+    <div class="privacy-policy">
+        <p><span id="year"></span> © DevLabs. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+    <!-- JS before /body -->
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+</footer>
     <div id="web_portfolio_popUp" class="web_portfolio_popUp">
         <div class="page_wrapper" style="position: relative;">
             <a id="closePortfolio" href="javascript:;"></a>
